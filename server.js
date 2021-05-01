@@ -5,7 +5,6 @@ app.use(express.json());
 app.use(bodyParser.json());
 app.use(express.static('FrontEnd'));
 const fetch = require('node-fetch');
-
 const PORT = process.env.PORT || 3000;
 
 const bodySend = {
