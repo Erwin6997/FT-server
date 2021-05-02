@@ -10,7 +10,7 @@ Customer : Financial Times
 Development Team : Meisam E Zarghani (Backend , frontend developer : 24 Apr 2021 - till date) 
 Date : 30 Apr 2021
 Server URL : [https://ft-server-meisam.herokuapp.com]
-Web URL : [ft-server-meisam.netlify.app]
+Web URL : [https://ft-server-meisam.netlify.app]
 
 ## About this file
 The purpose of this file is to provide overview, setup instructions and background information of the project. If you have joined this project as a part of the development team, please ensure this file is up to date.
