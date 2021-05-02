@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(cors());
-app.use('/', express.static(path.join(__dirname, '/FrontEnd')))
+app.use(express.static(path.join(__dirname, 'dist/FrontEnd')))
 
 const bodySend = {
 	queryString: '',
