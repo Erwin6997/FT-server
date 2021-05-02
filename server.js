@@ -10,7 +10,6 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(cors());
-app.use(express.static(path.join(__dirname, 'public')))
 
 const bodySend = {
 	queryString: '',
@@ -86,7 +85,9 @@ function fetchAPI(props) {
 	};
 }
 // end fetch
-
+if (process.env.NODE_ENV === 'production') {
+	app.use(express.static(path.join(__dirname, 'public', 'build')));
+}
 //Port
 app.listen(PORT, () => {
 	console.log(`Running at \`http://localhost:${PORT}\`...`);
