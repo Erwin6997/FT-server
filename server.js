@@ -79,6 +79,9 @@ function fetchAPI(props) {
   };
 }
 // end fetch 
+app.get('/', function(req, res) {
+    res.sendFile('./FrontEnd/index.html');
+});
 
 //Port
 app.listen(PORT, () => {
