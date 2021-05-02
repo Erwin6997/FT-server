@@ -5,11 +5,12 @@ const cors = require('cors');
 const fetch = require('node-fetch');
 const fs = require('fs');
 const path = require('path');
+const PORT = process.env.PORT || 3000;
+
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(cors());
-const PORT = process.env.PORT || 3000;
-app.use('/', express.static(path.join(__dirname, 'FrontEnd')))
+app.use('/', express.static(path.join(__dirname, '/FrontEnd')))
 
 const bodySend = {
 	queryString: '',
