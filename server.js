@@ -1,10 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
+const cors = require("cors");
+const fetch = require('node-fetch');
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(express.static('FrontEnd'));
-const fetch = require('node-fetch');
+app.use(cors());
 const PORT = process.env.PORT || 3000;
 
 const bodySend = {
