@@ -82,7 +82,7 @@ function fetchAPI(props) {
 }
 // end fetch 
 app.get('/', function(req, res) {
-    res.sendFile('./FrontEnd/index.html');
+    res.sendFile('./FrontEnd/index.html', {root: __dirname });
 });
 
 //Port
